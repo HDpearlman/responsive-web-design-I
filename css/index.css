@@ -84,17 +84,20 @@ header{
 }
 .headerText{
 	display:flex;
+	justify-content: center;
+	width:60%;
 }
 .headerleft {
 	display:inline-block;
 	/* border: 1px solid darkblue; */
 	height:381px;
-	width: 385px;
+	width: 50%;
 	vertical-align: middle;
-	margin-left:20%;
+	box-sizing:border-box;
+	
 }
 nav{
-	margin-left:20%;
+	margin-left:auto;
 	margin-bottom:5%;
 	width:100%;
 }
@@ -116,7 +119,6 @@ nav a{
 
 
 .headerlefttext h1{
-	margin-top:10%;
 	font-size:60px;
 	font:Impact, fantasy;
 	font-style: italic;
@@ -135,8 +137,8 @@ nav a{
 }
 .headerright{
 	display:inline-block;
-
-	vertical-align: middle;
+	width:50%;
+	
 	
 	
 }
