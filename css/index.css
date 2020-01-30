@@ -65,9 +65,16 @@ h1, h2, h3, h4, h5 {
 
 /* @Media Section */
 
-/* tablet */
+
+
 
 /* mobile */
+/* @media (max-width: 400px){
+nav{
+	.links{
+		border-bottom:1px solid black:
+	}
+} */
 
 /* index code */
 /*nav code*/
@@ -80,21 +87,31 @@ header{
 }
 nav {
 	display:flex;
-	width:100%;
-}
-nav{
-	margin-left:auto;
+	width:60%;
+	margin:auto;
 	margin-bottom:5%;
-	width:100%;
+	align-content: center;
+	justify-content: space-around;
+	
 }
-nav a{
+nav .links{
+	flex-wrap:nowrap;
+	width: 75%;
+}
+nav .logo-div{
+	width:25%
+}
+nav .links a{
 	text-align:center;
-	display:inline;
 	font-weight:bold;
 	color:grey;
 	text-decoration:none;
 	padding: 2%;
 	vertical-align: middle;
+	width:16%;
+}
+.link-group{
+	display:flex;
 }
 /* innovations and image */
 .title-picture{
@@ -209,131 +226,64 @@ address {
 	padding:1% 0;
 }
 
-/* Services page CSS */
-.services hr{
-	width: 90%;
-}
-nav {
-	
-	display:flex;
-	width: 90%;
-	color:grey;
-	justify-content:space-between;
-	flex-direction: row;
-	align-items:center;
-	/* border: 2px solid black; */
-	margin-left: 5%;
-	
-}
-/* header {
-	width: 90%;
-	margin-left:5%;
-}
-
-header h1{
-	font-size:28px;
-	margin-top:25px;
-} */
-nav a{
-	text-decoration:none;
-	color:gray;
-	font-weight:bold;
-}
-
-/* content{
-	display:flex;
-	width: 90%;
-	margin-left:5%;
-	flex-direction:column;
-	/* border: 1px solid green; */
-} */
-.services-header-img{
-	width:100%;
-	
-}
-
-.learnMore{
-	color:black;
-	border: 1px solid black;
-	padding: 2% 15%;
-	margin-left: 0px;
-	margin-top: 3%;
-	width: 20%;
-	justify-content:flex-start;
-	border-radius:5px;
-	text-decoration:none;
-	font-weight:bold;
-	background: white;
 
 
-}
-
-.service-list{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content: space-between;
-	margin: 0px;
-
-}
-.learnbox{
-	border:1px solid black;
-	width: 45%;
-	padding:5%;
-	margin-top: 5%;
-	margin-bottom:5%;
-	background: lightgrey;
-}
-.learnbox p{
-	padding: 2%;
-	margin-bottom:5%
-}
-
-.serviceFacts{
-	display:flex;
-	flex-wrap:wrap;
-	width: 100%;
-	margin-top: 3%;
-	justify-content:space-between;
-	
-	
-}
-.serviceFacts div{
-	width: 45%;
-
-}
-
-.serviceFacts div ul li{
-	list-style-type: square;
-	justify-content: flex-start;
-	/* padding:5%; */
-	margin-left:3%;
-	margin-top:2%;
-}
-
-.copyright{
-	width:90%;
-	font-size:20px;
-	text-align:center;
-	padding-top:1%;
-	font-weight:bold;
-	margin-left:5%;
-	color:grey;
-
-}
-
-
-}
-.services{
-	width:90%;
-	margin-left:5%;
-}
-
-/* content hr{
-	width: 100%;
-	margin:0;
-} */
-.serviceFacts img{
-		
-		width:100%;
-		
+/* tablet */
+@media (max-width:1024px){
+	.title-picture .imageright img{
+		display:none;
 	}
+	header{
+		width:100%;
+	}
+	/* header nav {
+		flex-direction:column-reverse;
+	} */
+	nav{
+		flex-wrap:wrap;
+		justify-content:space-between;
+		width:100%;
+	}
+	nav .logo-div{
+		margin:auto;
+	}
+	nav .links{
+		/* display:inline-block; */
+		width:10%;
+		padding:4%;
+	}
+	nav .logo-div{
+		order:-1;
+		width:100%;
+		margin:auto;
+		text-align:center;
+	}
+	.title-picture{
+		width:100%;
+		justify-content: center;
+	}
+	.sectionleft{
+		width:100%;
+		justify-content:center;
+		margin-left:25%;
+	}
+
+	section{
+		width:100%;
+
+	}
+	.aroundImgtop{
+		width:100%;
+	}
+	.banner-img{
+		width:100%;
+	}
+	.aroundImgbot{
+		width:100%;
+		margin:auto;
+	}
+	address{
+		margin-left:1%;
+	}
+}
+/* Services page CSS */
