@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* @Media Section */
+
 
 
 
@@ -79,7 +79,7 @@ nav{
 /* index code */
 /*nav code*/
 header{
-	display:flex;
+	/* display:flex; */
 	/* border:1px solid red; */
 	margin:0 auto;
 	width:60%;
@@ -87,27 +87,29 @@ header{
 }
 nav {
 	display:flex;
-	width:60%;
-	margin:auto;
-	margin-bottom:5%;
+	width:100%;
+	margin-bottom:5%; 
+	padding-top:5%;
 	align-content: center;
-	justify-content: space-around;
-	
+	flex-wrap:nowrap;
+	justify-content: space-between;
+
+}
+ 
+nav .logo-div{
+	width:25%;
+	margin:0;
 }
 nav .links{
-	flex-wrap:nowrap;
-	width: 75%;
-}
-nav .logo-div{
-	width:25%
+	margin:auto;
 }
 nav .links a{
-	text-align:center;
+	
 	font-weight:bold;
 	color:grey;
 	text-decoration:none;
-	padding: 2%;
-	vertical-align: middle;
+	/* padding: 2%; */
+	
 	width:16%;
 }
 .link-group{
@@ -226,11 +228,11 @@ address {
 	padding:1% 0;
 }
 
-
+/* @Media Section */
 
 /* tablet */
 @media (max-width:1024px){
-	.title-picture .imageright img{
+	.title-picture .imageright{
 		display:none;
 	}
 	header{
@@ -265,7 +267,7 @@ address {
 	.sectionleft{
 		width:100%;
 		justify-content:center;
-		margin-left:25%;
+		margin:0 auto;
 	}
 
 	section{
@@ -285,5 +287,59 @@ address {
 	address{
 		margin-left:1%;
 	}
+}
+
+/* mobile media */
+@media (max-width:400px){
+	nav{
+		flex-direction:column;
+	
+	}
+	nav .links{
+		width:100%;
+		text-align:center;
+		border-bottom:1px solid grey;
+		}
+		.smallwhitebox{
+			width:50%;
+			margin-bottom:5%;
+		}
+		section .aroundImgbot{
+			display:flex;
+			flex-direction:column;
+			
+		}
+		section .aroundImgbot>div{
+		width:100%;
+		margin-bottom:2%;
+	}
+	section .aroundImgtop{
+		display:flex;
+		flex-direction:column;
+		
+	}
+	section .aroundImgtop>div{
+	width:100%;
+	margin-bottom:2%;
+}
+	section .aroundImgtop .right-stuff{
+		width:100%;
+	}
+	.title-picture{
+		display:flex;
+		width:100%;
+		justify-content: center;
+		/* border: 1px solid blue; */
+	}
+	.sectionleft{
+		width:100% ;
+		/* border:1px solid red; */
+		margin:0 auto;
+		/* margin-left:25%; */
+		
+	}
+	/* .sectionleft h1{
+		font-size:
+	} */
 }
 /* Services page CSS */
