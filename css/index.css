@@ -65,10 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* @Media Section */
 
-/* 1440p */
-
-/* 1080p */
-
 /* tablet */
 
 /* mobile */
@@ -77,24 +73,14 @@ h1, h2, h3, h4, h5 {
 /*nav code*/
 header{
 	display:flex;
-	/* border:1px solid red; */
+	border:1px solid red;
 	margin:0 auto;
 	width:60%;
 	justify-content:center;
 }
-.headerText{
+nav {
 	display:flex;
-	justify-content: center;
-	width:60%;
-}
-.headerleft {
-	display:inline-block;
-	/* border: 1px solid darkblue; */
-	height:381px;
-	width: 50%;
-	vertical-align: middle;
-	box-sizing:border-box;
-	
+	width:100%;
 }
 nav{
 	margin-left:auto;
@@ -110,55 +96,71 @@ nav a{
 	padding: 2%;
 	vertical-align: middle;
 }
-/* nav ul li{
-	color:grey;
-	padding: 25px;
-	display:inline;
-} */
+/* innovations and image */
+.title-picture{
+	display:flex;
+	justify-content:center;
+	width: 60%;
+	margin:auto;
+	align-items:center;
+	padding-bottom: 5%;
+	border-bottom: 2px solid black;
+	margin-bottom: 1%;
+}
 
 
+.sectionleft {
+	
+	/* border: 1px solid darkblue; */
+	/* height:381px; */
+	width: 45%;
+	box-sizing:border-box;
+	vertical-align:center;
+}
 
+.headerlefttext{
+	vertical-align: center;
+}
 .headerlefttext h1{
 	font-size:60px;
 	font:Impact, fantasy;
 	font-style: italic;
 	text-align: center;
+	vertical-align: center;
 }
-.headerleft .smallwhitebox{
+.smallwhitebox{
 	text-align: center;
-	border: 1px dotted grey;
-	width:100px;
+	border: 1px solid Black;
+	width:28%;
 	margin:auto ;
+	padding:1% 3% ;
+	
 
 }
-.headerleft .smallwhitebox a{
+.smallwhitebox a{
 	text-decoration:none;
 	color:black;
 }
-.headerright{
-	display:inline-block;
-	width:50%;
-	
+.imageright{
+	width:45%;
 	
 	
 }
-section hr{
+/* section hr{
 	width: 60%;
-}
-.aroundImg{
-	display:inline-block;
-	margin-left:20%;
-	margin-right:20%;
+} */
+.aroundImgtop{
+	display:flex;
+	width:60%;
+	margin:auto;
+	border:1px solid blue;
 	
 }
 .left-stuff {
-	display:inline-block;
-	
 	width:49%;
 	
 }
 .aroundImg .right-stuff {
-	display:inline-block;
 	
 	width:49%;
 	
