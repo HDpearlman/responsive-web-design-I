@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
 /*nav code*/
 header{
 	display:flex;
-	border:1px solid red;
+	/* border:1px solid red; */
 	margin:0 auto;
 	width:60%;
 	justify-content:center;
@@ -153,31 +153,40 @@ nav a{
 	display:flex;
 	width:60%;
 	margin:auto;
-	border:1px solid blue;
+	/* border:1px solid blue; */
+	margin-bottom:1%;
 	
 }
 .left-stuff {
-	width:49%;
+	width:50%;
 	
 }
-.aroundImg .right-stuff {
+.aroundImgtop .right-stuff {
 	
-	width:49%;
+	width:50%;
 	
 }
-.middle-img{
-	display:inline-block;
-	margin-left:20%;
-	margin-right:20%;
+/* banner img */
+.banner-img{
+	width:60%;
+	margin:auto;
+}
+.banner-img img{
+	width: 100%;
+	margin-bottom:1%;
 }
 
-hr{
+/* hr{
 	border:1px solid black;
 	width: 60%;
-}
+} */
+
 .aroundImgbot{
 	margin-left: 20%;
 	margin-right: 20%;
+	border-bottom:1px solid black;
+	padding-bottom:1%;
+	margin-bottom:1%;
 }
  .left, .right, .middle{
 	display:inline-block;
@@ -190,12 +199,14 @@ address {
 }
 
 .Copyright{
-	text-align:center;
+	margin:auto;
 	margin-top:5%;
 	font-weight:bold;
+	width:60%;
+	text-align:center;
 }
 .phonenumber {
-	padding:4% 0;
+	padding:1% 0;
 }
 
 /* Services page CSS */
